@@ -1,0 +1,64 @@
+.banner {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../assets/layered-waves-haikei.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-row {
+    padding-top: 10vh;
+}
+
+.col1 {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.col2 {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.col2 img {
+    animation: float 3s linear infinite ;
+}
+
+h1 {
+    color: white;
+    font-size: 48px;
+    text-align: center;
+}
+
+p {
+    margin-top: 24px;
+    color: #fff !important;
+    font-size: 24px;
+    text-align:center;
+    max-width: 600px;
+    text-align: justify;
+}
+
+
+
+@keyframes float {
+    0% {
+        transform: translateY(-40px);
+    }
+    50% {
+        transform: translateY(40px);
+    }
+    100%{
+        transform: translateY(-40px);
+    }
+    
+}

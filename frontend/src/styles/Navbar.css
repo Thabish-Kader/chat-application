@@ -1,9 +1,11 @@
 .navbar {
-    background-color: transparent;
+    /* background-color: transparent; */
+    background-image: linear-gradient(to right top, #180c39, #190d49, #190c59, #170c6a, #100b7c);
     height: 10vh;
     width: 100%;
     position: fixed;
     --bs-navbar-brand-hover-color: purple;
+    z-index: 999;
 
 }
 
@@ -132,6 +134,8 @@ a:hover::before {
     transform-origin: left;
     transform: scaleX(1);
 }
+
+
 
 
 
