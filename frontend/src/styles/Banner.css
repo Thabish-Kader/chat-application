@@ -33,9 +33,21 @@
     animation: float 3s linear infinite ;
 }
 
+@media screen and (width:900vw) {
+	.col2 img {
+        display: none;
+	}
+}
+
 h1 {
-    color: white;
+    color: #c62368;
     font-size: 48px;
+    text-align: center;
+}
+
+h2 {
+    color: #8e007b;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -61,4 +73,50 @@ p {
         transform: translateY(-40px);
     }
     
+}
+
+.banner-btn{
+
+    margin-top: 25px;
+
+}
+
+.banner-btn a{
+display: block;
+width: 300px;
+height: 50px;
+line-height: 40px;
+font-size: 18px;
+font-family: sans-serif;
+text-decoration: none;
+color: rgb(255, 255, 255);
+border: 2px solid rgb(255, 255, 255);
+letter-spacing: 2px;
+text-align: center;
+
+transition: all .35s;
+}
+
+.banner-btn a span{
+position: relative;
+z-index: 2;
+}
+
+.banner-btn a:after{
+position: absolute;
+content: "";
+top: 0;
+left: 0;
+width: 0;
+height: 100%;
+background: #ff003b;
+transition: all .35s;
+}
+
+.banner-btn a:hover{
+color: #fff;
+}
+
+.banner-btn a:hover:after{
+width: 100%;
 }

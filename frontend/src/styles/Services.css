@@ -1,0 +1,23 @@
+.services {
+    min-height: 100vh;
+    width:100%;
+    background-image: url('../assets/blob-scene-haikei.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.grid-container {
+    padding-top: 10vh;
+    min-height:90vh;
+    width: 100%;
+    display: grid;
+    gap: 100px;
+
+}
+
+.row {
+    width: 100%;
+}
+

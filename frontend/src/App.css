@@ -2,6 +2,7 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+font-family: 'Oswald', sans-serif;
 }
 
 html {
@@ -17,13 +18,27 @@ background-color: #121212 !important;
 font-family: 'Centra', sans-serif !important;
 }
 
+h1 {
+    color: #c62368;
+    font-size: 48px;
+    text-align: center;
+}
+
+h2 {
+    color: #8e007b;
+    font-size: 30px;
+    text-align: center;
+}
+
 p {
-    color: white;
+    margin-top: 24px;
+    color: #fff !important;
+    font-size: 24px;
+    text-align:center;
+    max-width: 600px;
+    text-align: justify;
 }
-img {
-width: 100%;
-height: auto;
-}
+
 
 button {
 background-color: transparent;

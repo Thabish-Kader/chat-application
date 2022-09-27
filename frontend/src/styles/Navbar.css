@@ -1,6 +1,6 @@
 .navbar {
     /* background-color: transparent; */
-    background-image: linear-gradient(to right top, #180c39, #190d49, #190c59, #170c6a, #100b7c);
+    background-color:black;
     height: 10vh;
     width: 100%;
     position: fixed;
@@ -19,6 +19,7 @@
 .logo {
     color: white;
 }
+
 .logo:hover {
     color:purple;
 }
