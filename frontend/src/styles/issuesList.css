@@ -1,0 +1,128 @@
+.issueList-container {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../assets/issueListbck.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.issue-text {
+    margin-bottom: 32px;
+    text-align: center;
+    color: white;
+}
+
+.search-issue {
+    padding-left: 16px;
+    width: 300px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    background-image: linear-gradient( -225deg, #ac32e4 0%, #7918f2 48%, #4801ff 100% );
+    color: #e2e2e2;
+}
+
+.singleIssue-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.issueList-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid #d7d7d7;
+    width: 1100px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    padding-right: 24px;
+    min-width: 300px;
+}
+
+.user-img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.username-text {
+    font-size: 16px;
+    width: 150px;
+    color: white;
+}
+
+.issue-data {
+    display: flex;
+    text-align: right;
+    justify-content: center;
+    width: 100%;
+}
+
+.issue-title {
+    width: 155px;
+}
+
+.issue-description {
+    width:230px
+}
+
+.issue-priority{
+    width: 100px;
+}
+
+.issueList-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#resolve-btn {
+    background: #00ff73;
+    border-radius: 4px;
+    height: 50px;
+    width:100px;
+    cursor: pointer;
+}
+
+#resolve-btn:hover {
+    transition: All 0.2S ease-in-out;
+    color: #00ff73;
+    background-color:white; 
+}
+
+#discuss-btn {
+    background: #ff9900;
+    height: 50px;
+    width:100px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+#discuss-btn:hover {
+    transition: All 0.2S ease-in-out;
+    color: #ff9900;
+    background-color:white; 
+}
