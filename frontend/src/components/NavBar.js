@@ -1,22 +1,32 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import '../styles/Navbar.css';
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-scroll';
+
 
 
 export const NavBar = () => {
+    const navigate = useNavigate();
 
+    const singUpPage = () => {
+        navigate('/register');
+    }
     return (
-    <Navbar  expand="lg" className='navbar'>
-        <Container className='navbar-contanier'>
-            <Navbar.Brand href="#home" className='logo'>logo</Navbar.Brand>
-            <Nav className="nav-links">
-                <Nav.Link href="#home" className='nav-link'>Home</Nav.Link>
-                <Nav.Link href="#link" className='nav-link'>About</Nav.Link>
-                <Nav.Link href='#link3' className='nav-link'>Issue</Nav.Link>
-            </Nav>
-            <button className='glow-on-hover'>Sign Up</button>
-        </Container>
-    </Navbar>
+        <>
+        <nav className='navbar'>
+            <div className='navbar-contanier'>
+            <Link to="main" spy={true} smooth={true} offset={-50} duration={500} className='logo'>logo</Link>
+
+                <div className="nav-links">
+                    <Link to="banner" spy={true} smooth={true} offset={-70} duration={500} id='nav-link'>Home</Link>
+                    <Link to="services-section" spy={true} smooth={true} offset={-70} duration={500} id='nav-link'>Services</Link>
+                    <Link to='issue' spy={true} smooth={true} offset={-70} duration={500} id='nav-link'>Issue</Link>
+                </div>
+
+                <button className='glow-on-hover' onClick={singUpPage}>Sign Up</button>
+            </div>
+    </nav>
+    </>
+
+
     )
 }

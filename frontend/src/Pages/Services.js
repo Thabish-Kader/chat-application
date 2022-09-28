@@ -7,7 +7,7 @@ import { Card1, Card2, Card3, Card4 } from '../components/Cards';
 
 export const Services = () => {
     return (
-        <section className='services'>
+        <section id="services-section" className='services'>
         <Container className='grid-container'>
             <Row className='row'>
                 <Col><Card4/></Col>

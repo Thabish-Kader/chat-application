@@ -75,48 +75,48 @@ p {
     
 }
 
-.banner-btn{
-
-    margin-top: 25px;
-
+#banner-btn-container{
+    margin-top: 40px;
+    margin-left: 234px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
 }
 
-.banner-btn a{
-display: block;
-width: 300px;
-height: 50px;
-line-height: 40px;
-font-size: 18px;
-font-family: sans-serif;
-text-decoration: none;
-color: rgb(255, 255, 255);
-border: 2px solid rgb(255, 255, 255);
-letter-spacing: 2px;
-text-align: center;
-
-transition: all .35s;
+#hover-btn{
+    display: block;
+    width: 250px;
+    height: 50px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+    border: 2px solid rgb(255, 255, 255);
+    letter-spacing: 2px;
+    text-align: center;
+    transition: all .35s;
 }
 
-.banner-btn a span{
-position: relative;
-z-index: 2;
+#hover-btn span{
+    position: relative;
+    z-index: 2;
 }
 
-.banner-btn a:after{
-position: absolute;
-content: "";
-top: 0;
-left: 0;
-width: 0;
-height: 100%;
-background: #ff003b;
-transition: all .35s;
+#hover-btn:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff003b;
+    transition: all .35s;
 }
 
-.banner-btn a:hover{
-color: #fff;
+#hover-btn:hover{
+    color: #fff;
 }
 
-.banner-btn a:hover:after{
-width: 100%;
+#hover-btn:hover:after{
+    width: 100%;
 }
