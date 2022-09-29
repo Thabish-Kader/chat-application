@@ -14,7 +14,7 @@ export const NavBar = () => {
         <>
         <nav className='navbar'>
             <div className='navbar-contanier'>
-            <Link to="main" spy={true} smooth={true} offset={-50} duration={500} className='logo'>logo</Link>
+            <Link to="main" spy={true} smooth={true} offset={-70} duration={500} className='logo'>logo</Link>
 
                 <div className="nav-links">
                     <Link to="banner" spy={true} smooth={true} offset={-70} duration={500} id='nav-link'>Home</Link>

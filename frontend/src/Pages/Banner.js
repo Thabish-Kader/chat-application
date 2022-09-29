@@ -47,7 +47,7 @@ export const Banner = () => {
                         
                     </Col>
                     <Col className='col2'>
-                        <img src={bannerImg} alt="banner img"/>
+                        <img className="banner-img" src={bannerImg} alt="banner img"/>
                     </Col>
                 </Row>
                 </Container>

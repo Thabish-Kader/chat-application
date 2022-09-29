@@ -29,12 +29,14 @@
 
 }
 
-.col2 img {
+.banner-img {
+    height: auto;
+    width: 100%;
     animation: float 3s linear infinite ;
 }
 
 @media screen and (width:900vw) {
-	.col2 img {
+	.banner-img {
         display: none;
 	}
 }
