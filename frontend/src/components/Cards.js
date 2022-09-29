@@ -17,10 +17,7 @@ export const Card1 = () => {
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        {/* <Button variant="primary">Interested</Button> */}
-        <div className="card-btn">
-                        <a href="#link"><span>Get Started!</span></a>
-                        </div>
+      <button className='card-btn'>Interested</button>
       </Card.Body>
     </Card>
 
@@ -40,9 +37,8 @@ export const Card2 = () => {
           bulk of the card's content.
         </Card.Text>
         {/* <Button variant="primary">Interested</Button> */}
-        <div className="card-btn">
-                        <a href="#link"><span>Get Started!</span></a>
-                        </div>
+        <button className='card-btn'>Interested</button>
+
       </Card.Body>
     </Card>
   )
@@ -59,9 +55,8 @@ export const Card3 = () => {
           bulk of the card's content.
         </Card.Text>
         {/* <Button variant="primary">Interested</Button> */}
-        <div className="card-btn">
-                        <a href="#link"><span>Get Started!</span></a>
-                        </div>
+        <button className='card-btn'>Interested</button>
+
       </Card.Body>
     </Card>
   )
@@ -78,9 +73,8 @@ export const Card4 = () => {
           bulk of the card's content.
         </Card.Text>
         {/* <Button variant="primary">Interested</Button> */}
-        <div className="card-btn">
-                        <a href="#link"><span>Get Started!</span></a>
-                        </div>
+        <button className='card-btn'>Interested</button>
+
       </Card.Body>
     </Card>
   )

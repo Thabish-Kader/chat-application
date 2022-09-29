@@ -7,7 +7,7 @@ import Form from 'react-bootstrap/Form';
 
 export const Issue = () => {
     return (
-        <section className='issue-container'>
+        <section id="issue" className='issue-container'>
             <div className='issue-quote'>
             <span className='quote'>
 
