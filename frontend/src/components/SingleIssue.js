@@ -1,11 +1,23 @@
 import React from 'react';
 import '../styles/IssuesList.css'
-import { auth } from "../config/firebase";
-import { useAuthState } from "react-firebase-hooks/auth";
+import { doc, deleteDoc, collection } from "firebase/firestore";
+import {db } from '../config/firebase'
+;
 
 export const SingleIssue = ({data}) => {
+
+
     const {Username, Title, Description, Priority} = data;
-    const [user] = useAuthState(auth);
+
+
+    const resolveIssue =  async (id) => {
+        const deleteIssue = doc(db,'issues', id);
+        await deleteDoc(deleteIssue);
+        
+    }
+    
+
+
     return (
         <div className='singleIssue-container'>
                 <div className='issueList-row'>
@@ -15,10 +27,17 @@ export const SingleIssue = ({data}) => {
                 <div className='issue-data'>
                     <p className='issue-title'>{Title}</p>
                     <p className='issue-description'>{Description}</p>
-                    <p className='issue-priority'>{Priority}</p>
+
+                    {Priority === 'High' && <p className='issue-priority' style={{color:"red"}}>{Priority}</p>}
+                    {Priority === 'Low' && <p className='issue-priority' style={{color:"green"}}>{Priority}</p>}
+                    {Priority === 'Medium' && <p className='issue-priority' style={{color:"yellow"}}>{Priority}</p>}
+                    
+
+                    
+                    
                 </div>
                 <div className='issueList-btns'>
-                    <button id='resolve-btn'>Resolve</button>
+                    <button id='resolve-btn' onClick={() => resolveIssue(data.id)}>Resolve</button>
                     <button id='discuss-btn'>Discuss</button>
                 </div>
                 </div>

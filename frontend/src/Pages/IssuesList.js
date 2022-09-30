@@ -7,9 +7,8 @@ import {db} from '../config/firebase';
 
 export const IssuesList = () => {
     const issuesRef = collection(db,'issues');
-    const [issuesList, setIssuesList] = useState(null);
+    const [issuesList, setIssuesList] = useState([]);
 
-    const [coins, setCoins] = useState([]);
     const [search, setSearch] = useState('');
 
     const getIssues = async () => {
@@ -19,6 +18,7 @@ export const IssuesList = () => {
 
 useEffect(() => {
     getIssues();
+    console.log("i am working")
 }, []);
     
 
@@ -26,16 +26,18 @@ const handleChange = e => {
     setSearch(e.target.value);
 };
 
-const filteredCoins = coins.filter(coin =>
-    coin.name.toLowerCase().includes(search.toLowerCase())
-);
+const filterSearch = issuesList.filter(data => 
+    data.Title.toLowerCase().includes(search.toLowerCase())
+    );
+
+
 
     return (
         <div className='issueList-container'>
             <div className='search-component'>
                 <h1 className='issue-text'>Search Issues</h1>
                 <form>
-                    <input type='text' className='search-issue' placeholder='Search'/>
+                    <input type='text' className='search-issue' placeholder='Search' onChange={handleChange}/>
                 </form>
             </div>
             <div className='singleIssue-container'>
@@ -52,7 +54,7 @@ const filteredCoins = coins.filter(coin =>
                 </div>
                 </div>
         </div>
-            {issuesList?.map((data) => (
+            {filterSearch?.map((data) => (
                 <SingleIssue key={data.id} data={data}/>
             ))}
     </div>
