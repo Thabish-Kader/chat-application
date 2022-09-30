@@ -7,7 +7,6 @@ import { Services } from './Services'
 export const Main = () => {
     return (
         <div id='main'>
-
         <Banner/>
         <Services/>
         <Issue/>

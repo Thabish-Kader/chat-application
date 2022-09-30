@@ -1,27 +1,21 @@
 import React from 'react';
 import '../styles/IssuesList.css'
+import { auth } from "../config/firebase";
+import { useAuthState } from "react-firebase-hooks/auth";
 
-export const SingleIssue = ({
-    name,
-    price,
-    symbol,
-    marketcap,
-    volume,
-    image,
-    priceChange
-}) => {
-
+export const SingleIssue = ({data}) => {
+    const {Username, Title, Description, Priority} = data;
+    const [user] = useAuthState(auth);
     return (
         <div className='singleIssue-container'>
                 <div className='issueList-row'>
                 <div className='user'>
-                    <img className="user-img" src='' alt='user'/>
-                    <h1 className='username-text'>user</h1>
+                    <h1 className='username-text'>{Username}</h1>
                 </div>
                 <div className='issue-data'>
-                    <p className='issue-title'>title</p>
-                    <p className='issue-description'>description</p>
-                    <p className='issue-priority'>priority</p>
+                    <p className='issue-title'>{Title}</p>
+                    <p className='issue-description'>{Description}</p>
+                    <p className='issue-priority'>{Priority}</p>
                 </div>
                 <div className='issueList-btns'>
                     <button id='resolve-btn'>Resolve</button>

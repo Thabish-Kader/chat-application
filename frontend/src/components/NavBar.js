@@ -2,8 +2,8 @@ import '../styles/Navbar.css';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import {auth} from '../config/firebase';
-import {useAuthState} from 'react-firebase-hooks/auth'
-import {signOut} from 'firebase/auth'
+import {useAuthState} from 'react-firebase-hooks/auth';
+import {signOut} from 'firebase/auth';
 
 export const NavBar = () => {
 
