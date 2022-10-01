@@ -40,7 +40,7 @@ export const Banner = () => {
                         </div> */}
 
                         <div id="banner-btn-container">
-                        <Link id='hover-btn' to="services"><span>Get Started!</span></Link>
+                        <Link id='hover-btn' to="services-section" spy={true} smooth={true} offset={-90} duration={500}><span>Get Started!</span></Link>
                         </div>
 
 

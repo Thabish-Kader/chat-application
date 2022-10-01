@@ -1,7 +1,6 @@
 import React from 'react'
 import '../styles/Issue.css'
 import omega from '../assets/tom.svg'
-import Form from 'react-bootstrap/Form';
 import {useForm} from 'react-hook-form';
 import * as yup from "yup";
 import {yupResolver} from '@hookform/resolvers/yup'
@@ -56,11 +55,11 @@ export const Issue = () => {
                     <input id = "issue-input" type='text' placeholder="Enter Issue..." {...register('title')}/>
                     <label className='issue-label'>Description of Issue</label>
                     <textarea id= "issue-textarea" placeholder="Describe your Issue" {...register('description')}/>
-                    <Form.Select aria-label="Default select example" className='dropdown' {...register("priority")}>
+                    <select className='dropdown' {...register("priority")}>
                     <option value="High">High</option>
                     <option value="Medium">Medium</option>
                     <option value="Low">Low</option>
-                    </Form.Select>
+                    </select>
 
                     <button type = "submit" className="issue-btn">Submit</button>
                 </form>
