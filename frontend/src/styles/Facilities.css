@@ -32,7 +32,7 @@
 }
 
 .facility-item:hover {
-    transform: scale(1);
+    background-color: #ffcb2b;
 }
 
 .facility-container {

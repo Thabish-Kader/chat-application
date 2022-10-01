@@ -4,6 +4,7 @@ import chat from '../assets/char.svg'
 import community from '../assets/community.svg'
 import facilities from '../assets/facilities.svg'
 import team from '../assets/team.svg'
+import { motion } from "framer-motion";
 
 export const Facilities = () => {
     return (
@@ -13,7 +14,7 @@ export const Facilities = () => {
                 <p>Services we offer for students with problems</p>
             </header>
             <ul className='grid-list'>
-                <li className='facility-item'>
+                <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} className='facility-item'>
                     <div className='facility-container'>
                         <a className='facility'>
                             <img className='facility-img' src={chat} alt="facility-img"/>
@@ -30,8 +31,8 @@ export const Facilities = () => {
                             </div>
                         </a>
                     </div>
-                </li>
-                <li className='facility-item'>
+                </motion.li>
+                <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} className='facility-item'>
                     <div className='facility-container'>
                         <a className='facility'>
                             <img className='facility-img' src={community} alt="facility-img"/>
@@ -48,8 +49,8 @@ export const Facilities = () => {
 
                         </a>
                     </div>
-                </li>
-                <li className='facility-item'>
+                </motion.li>
+                <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} className='facility-item'>
                     <div className='facility-container'>
                         <a className='facility'>
                             <img className='facility-img' src={facilities} alt="facility-img"/>
@@ -66,8 +67,8 @@ export const Facilities = () => {
                             </div>
                         </a>
                     </div>
-                </li>
-                <li className='facility-item'>
+                </motion.li>
+                <motion.li  whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} className='facility-item'>
                     <div className='facility-container'>
                         <a className='facility'>
                             <img className='facility-img' src={team} alt="facility-img"/>
@@ -84,7 +85,7 @@ export const Facilities = () => {
                             </div>
                         </a>
                     </div>
-                </li>
+                </motion.li>
             </ul>
         </section>
     )

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/IssuesList.css'
-import { doc, deleteDoc, collection } from "firebase/firestore";
+import { doc, deleteDoc } from "firebase/firestore";
 import {db } from '../config/firebase';
 
 
