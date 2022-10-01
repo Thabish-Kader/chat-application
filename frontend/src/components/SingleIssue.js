@@ -1,8 +1,8 @@
 import React from 'react';
 import '../styles/IssuesList.css'
 import { doc, deleteDoc, collection } from "firebase/firestore";
-import {db } from '../config/firebase'
-;
+import {db } from '../config/firebase';
+
 
 export const SingleIssue = ({data}) => {
 
@@ -13,7 +13,6 @@ export const SingleIssue = ({data}) => {
     const resolveIssue =  async (id) => {
         const deleteIssue = doc(db,'issues', id);
         await deleteDoc(deleteIssue);
-        
     }
     
 
