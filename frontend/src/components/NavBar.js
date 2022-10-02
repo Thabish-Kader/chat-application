@@ -10,8 +10,8 @@ export const NavBar = () => {
     const [user] = useAuthState(auth);
     const navigate = useNavigate();
 
-    const loginPage = () => {
-        navigate('/login');
+    const signUpPage = () => {
+        navigate('/register');
     }
 
     const signUserOut = async () => {
@@ -32,12 +32,12 @@ export const NavBar = () => {
                 <div className='user-info'>
                     {user ? 
                     <>
-                    <p className='user-text'>Signed in as <span>{user?.displayName}</span></p>
+                    <p className='user-text'>Signed in as <span>{user?.email}</span></p>
                     <button className='glow-on-hover' onClick={signUserOut}>Log Out</button>
                     </>
                     : 
                     <>
-                    <button className='glow-on-hover' onClick={loginPage}>Log In</button>
+                    <button className='glow-on-hover' onClick={signUpPage}>Sign Up</button>
                     </>    
                     }
                 </div>

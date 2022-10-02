@@ -8,8 +8,8 @@ import { Issue } from './Issue'
 export const Main = () => {
     return (
         <div id='main'>
+        
         <Banner/>
-        {/* <Services/> */}
         <Facilities/>
         <Issue/>
         </div>

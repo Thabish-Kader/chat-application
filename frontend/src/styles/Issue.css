@@ -81,6 +81,7 @@
     border: none;
 }
 
+
 .dropdown:hover {
     transition: All 0.2S ease-in-out;
     color: #fa7268;

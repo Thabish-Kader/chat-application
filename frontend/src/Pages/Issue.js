@@ -8,6 +8,7 @@ import {addDoc, collection} from 'firebase/firestore'
 import {auth, db} from '../config/firebase'
 import {useAuthState} from 'react-firebase-hooks/auth'
 import { useNavigate } from 'react-router-dom';
+import {motion} from 'framer-motion'
 
 export const Issue = () => {
 
