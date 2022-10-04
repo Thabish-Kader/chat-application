@@ -3,7 +3,7 @@ import {db} from '../../config/firebase'
 import { collection, onSnapshot, query, orderBy} from 'firebase/firestore'
 import { Message } from './Message';
 import { SendMessage } from './SendMessage';
-import {Link} from 'react-router-dom';
+
 import '../../styles/ChatRoom.css'
 
 export const ChatRoom = () => {
@@ -29,13 +29,13 @@ export const ChatRoom = () => {
         
         <main className='chatroom-container'>
             <div className='navigation-component'>
-                <p>logo</p>
+                {/* <p>logo</p>
                 <div className='chatroom-links'>
                     <p>Home</p>
                     <p>Services</p>
                     <p>Issues</p>
                 </div>
-                    <button className='bck-btn'>Back</button>
+                    <button className='bck-btn'>Back</button> */}
             </div>
             <div className='message-component'>
             {messages && 

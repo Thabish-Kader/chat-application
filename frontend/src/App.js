@@ -9,13 +9,20 @@ import { Main } from './Pages/Main';
 import { LoginPage } from './Pages/LoginPage';
 import { Facilities } from './Pages/Facilities';
 import { ChatRoom } from './Pages/Chat/ChatRoom';
+import { Landing } from './Pages/Landing';
+
+
 
 function App() {
+
+
+
   return (
     <div className="App">
       <Router>
         <NavBar/>
         <Routes>
+        <Route path='/' element={<Landing/>}/>
         <Route path='/login' element={<LoginPage/>}/>
         <Route path='/register' element={<Register/>}/>
         <Route path='/main' element={<Main/>}/>
@@ -26,8 +33,6 @@ function App() {
         <Route path='/chat' element={<ChatRoom/>}/>
         </Routes>
       </Router>
-
-
     </div>
   );
 }

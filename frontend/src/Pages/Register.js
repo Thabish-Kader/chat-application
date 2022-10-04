@@ -5,6 +5,7 @@ import {auth} from '../config/firebase'
 import {useNavigate} from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import {Link} from 'react-router-dom'
 
 export const Register = () => {
 
@@ -61,6 +62,7 @@ export const Register = () => {
                         <label className='label' >Password</label>
                         <input className='input' type="password" onChange={(e) => setRegisterPassword(e.target.value)}/>
                         <button onClick={register} className='submit-btn'>Submit</button>
+                        <h5 className='login-msg'>Already have an account <Link to='/login'> Click Here</Link></h5>
                     </div>
                 </div>
 
