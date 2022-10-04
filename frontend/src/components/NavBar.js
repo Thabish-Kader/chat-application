@@ -1,5 +1,5 @@
 import '../styles/Navbar.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link as LinkR } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import {auth} from '../config/firebase';
 import {useAuthState} from 'react-firebase-hooks/auth';
@@ -22,7 +22,7 @@ export const NavBar = () => {
         <>
         <nav className='navbar'>
             <div className='navbar-contanier'>
-            <Link to="main" spy={true} smooth={true} offset={-70} duration={500} className='logo'>logo</Link>
+            <LinkR to="main" spy={true} smooth={true} offset={-70} duration={500} className='logo'>logo</LinkR>
 
                 <div className="nav-links">
                     <Link to="banner" spy={true} smooth={true} offset={-70} duration={500} id='nav-link'>Home</Link>

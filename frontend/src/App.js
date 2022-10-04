@@ -8,6 +8,7 @@ import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Main } from './Pages/Main';
 import { LoginPage } from './Pages/LoginPage';
 import { Facilities } from './Pages/Facilities';
+import { ChatRoom } from './Pages/Chat/ChatRoom';
 
 function App() {
   return (
@@ -22,10 +23,11 @@ function App() {
         <Route path='/services' element={<Facilities/>}/>
         <Route path='/issue' element={<Issue/>}/>
         <Route path='/issueslist' element={<IssuesList/>}/>
+        <Route path='/chat' element={<ChatRoom/>}/>
         </Routes>
       </Router>
 
-      
+
     </div>
   );
 }

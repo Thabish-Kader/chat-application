@@ -2,10 +2,10 @@ import React from 'react';
 import '../styles/IssuesList.css'
 import { doc, deleteDoc } from "firebase/firestore";
 import {db } from '../config/firebase';
-
+import {useNavigate} from 'react-router-dom'
 
 export const SingleIssue = ({data}) => {
-
+    const navigate = useNavigate()
 
     const {Username, Title, Description, Priority} = data;
 
@@ -15,7 +15,9 @@ export const SingleIssue = ({data}) => {
         await deleteDoc(deleteIssue);
     }
     
-
+    const navigateChat = () => {
+        navigate('/chat')
+    }
 
     return (
         <div className='singleIssue-container'>
@@ -37,7 +39,7 @@ export const SingleIssue = ({data}) => {
                 </div>
                 <div className='issueList-btns'>
                     <button id='resolve-btn' onClick={() => resolveIssue(data.id)}>Resolve</button>
-                    <button id='discuss-btn'>Discuss</button>
+                    <button id='discuss-btn' onClick={navigateChat}>Discuss</button>
                 </div>
                 </div>
         </div>

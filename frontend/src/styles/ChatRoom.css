@@ -1,0 +1,123 @@
+.chatroom-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.navigation-component{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(38, 37, 49);
+    border-bottom: 1px solid white;
+}
+
+.navigation-component p {
+    margin-left: 20px;
+}
+
+.chatroom-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.chatroom-links p {
+    margin-right: 10px;
+}
+
+.bck-btn {
+    width: 100px;
+    color: rgb(2, 2, 2);
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+    margin-right: 20px;
+    height: 35px;
+}
+
+.bck-btn:hover {
+    background-color: blue;
+    color: white;
+    transition: all 0.2s ease-in-out ;
+}
+
+
+/* Message Component  */
+
+.message-component {
+    min-height: auto;
+    width: 100%;
+    margin : 0 70px
+}
+
+.message-container{
+    height: auto;
+    min-width: 100px;
+    margin: 30px;
+}
+
+.message-container .user-inputs {
+    width: 300px ;
+    border: 1px solid white;
+    margin: 30px;
+    border-radius: 20px 0px ;
+    height: 70px;
+    padding-left: 15px;
+    padding-top: 9px;
+}
+
+.message-component .right-msg{
+    margin-left: 55%;
+}
+
+.sent {
+    background-color: green;
+
+}
+
+
+.message-container .user-name {
+    font-size: 15px;
+    color: grey;
+
+}
+
+.message-container .user-message {
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.send-message-container{
+    margin-left: 130px;
+}
+
+/* Send Message css */
+
+.message-input {
+    width: 63%;
+    height: 50px
+}
+
+.message-btn {
+    margin-left:20px;
+    width: 200px;
+    color: rgb(0, 0, 0);
+    border: none;
+    background-color: aliceblue;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.message-btn:hover {
+    transition: all 0.2s ease-in-out;
+    color: rgb(255, 255, 255);
+    background-color: blue;
+}

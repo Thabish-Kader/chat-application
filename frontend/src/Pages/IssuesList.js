@@ -18,8 +18,8 @@ export const IssuesList = () => {
 
 useEffect(() => {
     getIssues();
-    console.log("i am working")
-}, []);
+
+}, [issuesList]);
     
 
 const handleChange = e => {

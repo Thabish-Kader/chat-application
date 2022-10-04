@@ -5,6 +5,7 @@ import community from '../assets/community.svg'
 import facilities from '../assets/facilities.svg'
 import team from '../assets/team.svg'
 import { motion } from "framer-motion";
+import {Link} from 'react-router-dom'
 
 export const Facilities = () => {
     return (
@@ -16,7 +17,7 @@ export const Facilities = () => {
             <ul className='grid-list'>
                 <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} className='facility-item'>
                     <div className='facility-container'>
-                        <a className='facility'>
+                        <a href='/chat' className='facility'>
                             <img className='facility-img' src={chat} alt="facility-img"/>
                             <div className='facility-info'>
                                 <h1>Collaborate</h1>
@@ -31,10 +32,11 @@ export const Facilities = () => {
                             </div>
                         </a>
                     </div>
+
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} className='facility-item'>
                     <div className='facility-container'>
-                        <a className='facility'>
+                        <a href="issueslist" className='facility'>
                             <img className='facility-img' src={community} alt="facility-img"/>
                             <div className='facility-info'>
                                 <h1>Community</h1>
@@ -70,7 +72,7 @@ export const Facilities = () => {
                 </motion.li>
                 <motion.li  whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} className='facility-item'>
                     <div className='facility-container'>
-                        <a className='facility'>
+                        <a href="https://github.com/" className='facility'>
                             <img className='facility-img' src={team} alt="facility-img"/>
                             <div className='facility-info'>
                                 <h1>Coaction</h1>
