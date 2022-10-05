@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import '../styles/Services.css';
 import chat from '../assets/char.svg';
 import community from '../assets/community.svg';
@@ -8,16 +8,20 @@ import team from '../assets/team.svg';
 export const Services = () => {
 
     // Observer for intial messagess
+    const contaniner = document.querySelectorAll('.hidden');
+
     const observer = new IntersectionObserver((entries) => {
-        console.log("observer working !!!")
+        console.log("observer working !!")
         entries.forEach((entry) => {
             if(entry.isIntersecting) {
                 entry.target.classList.add("show");
-            } 
+            }else {
+                entry.target.classList.remove("show");
+
+            }
         })
     } );
 
-    const contaniner = document.querySelectorAll('.hidden');
     contaniner.forEach((element) => observer.observe(element));
 
     //observer for cards
@@ -25,13 +29,14 @@ export const Services = () => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('appear')
+            }else {
+                entry.target.classList.remove("appear");
             }
         })
     });
 
     const cardContainer = document.querySelectorAll('.card-container');
     cardContainer.forEach((element) => cardObserver.observe(element));
-    
 
     return (
     <section className='services-container' id='services-section'>
