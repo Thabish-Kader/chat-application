@@ -22,12 +22,12 @@ export const NavBar = () => {
         <>
         <nav className='navbar'>
             <div className='navbar-contanier'>
-            <LinkR to="/main" spy={true} smooth={true} offset={-70} duration={500} className='logo'>logo</LinkR>
+            <LinkR to="/main" className='logo'>logo</LinkR>
 
                 <div className="nav-links">
                     <Link to="banner" spy={true} smooth={true} offset={-70} duration={500} id='nav-link'>Home</Link>
-                    <Link to="services-section" spy={true} smooth={true} offset={-90} duration={500} id='nav-link'>Services</Link>
-                    <Link to='issue' spy={true} smooth={true} offset={-70} duration={500} id='nav-link'>Issue</Link>
+                    <Link to="services-section" spy={true} smooth={true} offset={-50} duration={500} id='nav-link'>Services</Link>
+                    <Link to='issue' spy={true} smooth={true} offset={-50} duration={500} id='nav-link'>Issue</Link>
                 </div>
                 <div className='user-info'>
                     {user ? 

@@ -10,6 +10,7 @@ import { LoginPage } from './Pages/LoginPage';
 import { Facilities } from './Pages/Facilities';
 import { ChatRoom } from './Pages/Chat/ChatRoom';
 import { Landing } from './Pages/Landing';
+import { Services } from './Pages/Services';
 
 
 
@@ -27,12 +28,14 @@ function App() {
         <Route path='/register' element={<Register/>}/>
         <Route path='/main' element={<Main/>}/>
         <Route path='/home' element={<Banner/>}/>
-        <Route path='/services' element={<Facilities/>}/>
+        <Route path='/services' element={<Services/>}/>
         <Route path='/issue' element={<Issue/>}/>
         <Route path='/issueslist' element={<IssuesList/>}/>
         <Route path='/chat' element={<ChatRoom/>}/>
         </Routes>
       </Router>
+
+
     </div>
   );
 }

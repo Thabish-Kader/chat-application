@@ -1,4 +1,4 @@
-#facilities{
+/* #facilities{
     height: 90vh;
     width: 100%;
 }
@@ -29,10 +29,37 @@
     width:100%;
     border-radius: 10px;
     cursor: pointer;
+    opacity: 0;
+    transition: all 1s;
+    transform: translateX(-100%);
+}
+
+.facility-item:nth-child(1){
+    transition-delay: 100ms ;
+}
+
+.facility-item:nth-child(2){
+    transition-delay: 400ms ;
+}
+
+.facility-item:nth-child(3){
+    transition-delay: 600ms ;
+}
+
+.facility-item:nth-child(4){
+    transition-delay: 800ms ;
+}
+
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+
 }
 
 .facility-item:hover {
     background-color: #ffcb2b;
+    transition: all 0.5s;
 }
 
 .facility-container {
@@ -120,4 +147,4 @@
     background: #000000;
     color: #fff;
 }
-
+ */

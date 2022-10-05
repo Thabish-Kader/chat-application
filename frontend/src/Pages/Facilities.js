@@ -1,13 +1,27 @@
-import React from 'react'
-import '../styles/Facilities.css'
-import chat from '../assets/char.svg'
-import community from '../assets/community.svg'
-import facilities from '../assets/facilities.svg'
-import team from '../assets/team.svg'
-import { motion } from "framer-motion";
-import {Link} from 'react-router-dom'
+import React from 'react';
+import '../styles/Facilities.css';
+import chat from '../assets/char.svg';
+import community from '../assets/community.svg';
+import facilities from '../assets/facilities.svg';
+import team from '../assets/team.svg';
+
 
 export const Facilities = () => {
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting){
+                entry.target.classList.add('show');
+            } else {
+                entry.target.classList.remove('show');
+            }
+        })
+    }, {threshold : 0.5});
+
+    const cards = document.querySelectorAll('.facility-item');
+
+    cards.forEach((el) => observer.observe(el));
+
     return (
         <section id='services-section'>
             <header className='facilities-header'>
@@ -15,7 +29,7 @@ export const Facilities = () => {
                 <p>Services we offer for students with problems</p>
             </header>
             <ul className='grid-list'>
-                <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} className='facility-item'>
+                <li className='facility-item'>
                     <div className='facility-container'>
                         <a href='/chat' className='facility'>
                             <img className='facility-img' src={chat} alt="facility-img"/>
@@ -33,8 +47,8 @@ export const Facilities = () => {
                         </a>
                     </div>
 
-                </motion.li>
-                <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} className='facility-item'>
+                </li>
+                <li className='facility-item'>
                     <div className='facility-container'>
                         <a href="issueslist" className='facility'>
                             <img className='facility-img' src={community} alt="facility-img"/>
@@ -51,8 +65,8 @@ export const Facilities = () => {
 
                         </a>
                     </div>
-                </motion.li>
-                <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} className='facility-item'>
+                </li>
+                <li className='facility-item'>
                     <div className='facility-container'>
                         <a className='facility'>
                             <img className='facility-img' src={facilities} alt="facility-img"/>
@@ -69,8 +83,8 @@ export const Facilities = () => {
                             </div>
                         </a>
                     </div>
-                </motion.li>
-                <motion.li  whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} className='facility-item'>
+                </li>
+                <li  className='facility-item'>
                     <div className='facility-container'>
                         <a href="https://github.com/" className='facility'>
                             <img className='facility-img' src={team} alt="facility-img"/>
@@ -87,7 +101,7 @@ export const Facilities = () => {
                             </div>
                         </a>
                     </div>
-                </motion.li>
+                </li>
             </ul>
         </section>
     )
