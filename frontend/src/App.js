@@ -7,7 +7,6 @@ import { Register } from './Pages/Register';
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Main } from './Pages/Main';
 import { LoginPage } from './Pages/LoginPage';
-import { Facilities } from './Pages/Facilities';
 import { ChatRoom } from './Pages/Chat/ChatRoom';
 import { Landing } from './Pages/Landing';
 import { Services } from './Pages/Services';

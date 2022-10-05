@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/IssuesList.css'
+import '../styles/issuesList.css'
 import { doc, deleteDoc } from "firebase/firestore";
 import {db } from '../config/firebase';
 import {useNavigate} from 'react-router-dom'

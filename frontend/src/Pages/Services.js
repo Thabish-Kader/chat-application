@@ -11,7 +11,7 @@ export const Services = () => {
     const contaniner = document.querySelectorAll('.hidden');
 
     const observer = new IntersectionObserver((entries) => {
-        console.log("observer working !!")
+        console.log("observer working !!!")
         entries.forEach((entry) => {
             if(entry.isIntersecting) {
                 entry.target.classList.add("show");
