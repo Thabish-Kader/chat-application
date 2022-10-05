@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import '../styles/IssuesList.css'
+import '../styles/issuesList.css'
 import  {SingleIssue}  from '../components/SingleIssue'
 import {getDocs, collection} from 'firebase/firestore'
 import axios from 'axios';
