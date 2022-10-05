@@ -3,28 +3,36 @@ import { NavBar } from './components/NavBar';
 import { Banner } from './Pages/Banner';
 import { Issue } from './Pages/Issue';
 import { IssuesList } from './Pages/IssuesList';
-import { Login } from './Pages/Login';
 import { Register } from './Pages/Register';
-import { Services } from './Pages/Services';
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Main } from './Pages/Main';
+import { LoginPage } from './Pages/LoginPage';
+import { Facilities } from './Pages/Facilities';
+import { ChatRoom } from './Pages/Chat/ChatRoom';
+import { Landing } from './Pages/Landing';
+
+
 
 function App() {
+
+
+
   return (
     <div className="App">
       <Router>
-      <NavBar/>
+        <NavBar/>
         <Routes>
-        <Route path='/login' element={<Login/>}/>
+        <Route path='/' element={<Landing/>}/>
+        <Route path='/login' element={<LoginPage/>}/>
         <Route path='/register' element={<Register/>}/>
         <Route path='/main' element={<Main/>}/>
         <Route path='/home' element={<Banner/>}/>
-        <Route path='/services' element={<Services/>}/>
+        <Route path='/services' element={<Facilities/>}/>
         <Route path='/issue' element={<Issue/>}/>
-        <Route path='/issuelist' element={<IssuesList/>}/>
+        <Route path='/issueslist' element={<IssuesList/>}/>
+        <Route path='/chat' element={<ChatRoom/>}/>
         </Routes>
       </Router>
-      
     </div>
   );
 }

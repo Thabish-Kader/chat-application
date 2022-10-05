@@ -18,7 +18,7 @@
     justify-content: space-between;
 }
 
-.issue-quote {
+.quote {
     font-size: 25px;
 }
 
@@ -77,7 +77,10 @@
     padding: 16px 16px;
     margin-top: 32px;
     margin-bottom: 32px;
+    border-radius: 4px;
+    border: none;
 }
+
 
 .dropdown:hover {
     transition: All 0.2S ease-in-out;

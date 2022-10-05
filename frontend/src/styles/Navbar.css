@@ -29,11 +29,18 @@
     color:purple;
 }
 
+.user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 
 /* sign up button css */
 .glow-on-hover {
-    width: 220px;
+    width: 136px;
     height: 50px;
     border: 1px solid white;
     outline: none;
@@ -84,6 +91,21 @@
     left: 0;
     top: 0;
     border-radius: 10px;
+}
+
+.user-info .user-text {
+    margin-top: 24px;
+    color: #fff !important;
+    font-size: 24px;
+    text-align: center;
+    max-width: 600px;
+    text-align: justify;
+    margin-right: 20px;
+    font-size: 19px;
+}
+
+.user-info .user-text span {
+    border-bottom: 3px solid white;
 }
 
 @keyframes glowing {
