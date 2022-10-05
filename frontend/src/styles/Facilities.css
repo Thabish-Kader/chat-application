@@ -1,9 +1,87 @@
-#facilities{
-    height: 90vh;
+#services-section{
+    min-height: 100vh;
     width: 100%;
 }
 
 .facilities-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    align-content: center;
+    min-height:100vh;
+    transition: all 2s;
+}
+
+.facilities-header h1 {
+    font-size: 5rem;
+    font-weight: 1000;
+    line-height: 1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: green;
+    border-radius: 10px;
+    color: #000;
+    animation: jerk 2s infinite;
+}
+
+@keyframes jerk {
+    0% {transform:scale(1);}
+
+    100% {transform: scale(1.2);}
+}
+
+#work-together {
+    background-color:#a855f7 ;
+}
+
+#troubleshoot {
+    background-color: #eab308;
+}
+
+.facilities-header p {
+    font-size: 40px;
+    max-width: 100%;
+}
+
+.animate-span {
+    color:#11c347;
+    animation: pulse 2s cubic-bezier(.4,0,.6,1) infinite;
+}
+
+.animate-span2 {
+    color:#8141bf;
+    animation: pulse2 2s cubic-bezier(.4,0,.6,1) infinite;
+}
+
+.animate-span3 {
+    color:#eab308;
+    animation: pulse3 2s cubic-bezier(.4,0,.6,1) infinite;
+}
+
+/* animations */
+@keyframes pulse {
+    0% {color: white;}
+    50% {color: #4efa82;}
+    100%{color: #00fe4c;}
+}
+
+@keyframes pulse2 {
+    0% {color: white;}
+    50% {color: #cd9bff;}
+    100%{color: #b369fd;}
+}
+
+@keyframes pulse3 {
+    0% {color: white;}
+    50% {color: #f8d363;}
+    100%{color: #eab308;}
+}
+
+/* .facilities-header {
     text-align: center;
     margin-top: 5rem;
     margin-bottom: 2rem;
@@ -11,7 +89,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+} */
 
 .grid-list {
     display: grid;

@@ -5,15 +5,30 @@ import community from '../assets/community.svg'
 import facilities from '../assets/facilities.svg'
 import team from '../assets/team.svg'
 import { motion } from "framer-motion";
-import {Link} from 'react-router-dom'
+
 
 export const Facilities = () => {
     return (
         <section id='services-section'>
-            <header className='facilities-header'>
+
+            <div className='facilities-header'>
+                <h1 >Services</h1>
+                <p>Services we <span className="animate-span">OFFER</span> to students</p>   
+            </div>
+
+                    <div className='facilities-header '>
+                        <h1 id='work-together'>Work Together</h1>
+                        <p>Collaborate with friends teachers and take your <span className="animate-span2">PROJECT</span> to the next level</p>   
+                    </div>
+
+                    <div className='facilities-header '>
+                        <h1 id='troubleshoot'>Troubleshoot</h1>
+                        <p>Build relationship with <span className="animate-span3">COMMUNITY</span>-based programs designed for getting to the root cause of your problems </p>
+                    </div>
+            {/* <header className='facilities-header'>
                 <h1>Facilities</h1>
                 <p>Services we offer for students with problems</p>
-            </header>
+            </header> */}
             <ul className='grid-list'>
                 <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} className='facility-item'>
                     <div className='facility-container'>
