@@ -2,7 +2,9 @@
 ## React-Firebase Fullstack Web Application
 This application was built for the purpose of learning and implementing react and firebase concepts. This isuue/bug tracking web application 
 enable a user to post isssues. The issues posted can be discussed with other users in a chat room and can be resolved.
-The application has CRUD functionalities implemented with the help of firebase functions. 
+The application has CRUD functionalities implemented with the help of firebase functions.
+
+Checkout the [Live Demo](https://react-webapp-7defc.web.app/)
 
 ## Skills Aquired
 - React Hooks (useState, useEffect, useRef)
